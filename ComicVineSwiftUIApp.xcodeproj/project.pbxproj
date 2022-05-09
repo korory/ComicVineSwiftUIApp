@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		73ADE4252825898E00ED8EC3 /* ComicVineSwiftUIAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73ADE4242825898E00ED8EC3 /* ComicVineSwiftUIAppApp.swift */; };
+		73ADE4292825899000ED8EC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73ADE4282825899000ED8EC3 /* Assets.xcassets */; };
+		73ADE42C2825899000ED8EC3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73ADE42B2825899000ED8EC3 /* Preview Assets.xcassets */; };
+		73ADE43728258A9400ED8EC3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73ADE43628258A9400ED8EC3 /* Constants.swift */; };
+		73ADE43B28258DF900ED8EC3 /* DefaultModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73ADE43A28258DF900ED8EC3 /* DefaultModels.swift */; };
+		73ADE43F28258E3C00ED8EC3 /* CharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73ADE43E28258E3C00ED8EC3 /* CharactersViewModel.swift */; };
+		73BCEC332826E875003286AC /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BCEC322826E875003286AC /* NetworkManager.swift */; };
+		73BCEC372826ED6F003286AC /* GetPlistInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BCEC362826ED6F003286AC /* GetPlistInformation.swift */; };
+		73BCEC392828178B003286AC /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BCEC382828178B003286AC /* CharacterView.swift */; };
+		73BCEC3D282817AB003286AC /* CharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BCEC3C282817AB003286AC /* CharacterViewModel.swift */; };
+		73BCEC3F28282BC1003286AC /* URL.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73BCEC3E28282BC1003286AC /* URL.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		73ADE4212825898E00ED8EC3 /* ComicVineSwiftUIApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComicVineSwiftUIApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		73ADE4242825898E00ED8EC3 /* ComicVineSwiftUIAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicVineSwiftUIAppApp.swift; sourceTree = "<group>"; };
+		73ADE4282825899000ED8EC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		73ADE42B2825899000ED8EC3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		73ADE43628258A9400ED8EC3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		73ADE43A28258DF900ED8EC3 /* DefaultModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultModels.swift; sourceTree = "<group>"; };
+		73ADE43E28258E3C00ED8EC3 /* CharactersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewModel.swift; sourceTree = "<group>"; };
+		73BCEC322826E875003286AC /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		73BCEC352826E9F6003286AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73BCEC362826ED6F003286AC /* GetPlistInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPlistInformation.swift; sourceTree = "<group>"; };
+		73BCEC382828178B003286AC /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
+		73BCEC3C282817AB003286AC /* CharacterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewModel.swift; sourceTree = "<group>"; };
+		73BCEC3E28282BC1003286AC /* URL.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = URL.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		73ADE41E2825898E00ED8EC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		73ADE4182825898E00ED8EC3 = {
+			isa = PBXGroup;
+			children = (
+				73ADE4232825898E00ED8EC3 /* ComicVineSwiftUIApp */,
+				73ADE4222825898E00ED8EC3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		73ADE4222825898E00ED8EC3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				73ADE4212825898E00ED8EC3 /* ComicVineSwiftUIApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		73ADE4232825898E00ED8EC3 /* ComicVineSwiftUIApp */ = {
+			isa = PBXGroup;
+			children = (
+				73BCEC342826E99A003286AC /* Properties */,
+				73BCEC312826E861003286AC /* Networking */,
+				73ADE43228258A4B00ED8EC3 /* Utils */,
+				73ADE43328258A5400ED8EC3 /* Models */,
+				73ADE43428258A6000ED8EC3 /* Views */,
+				73ADE43528258A6D00ED8EC3 /* App */,
+				73ADE4242825898E00ED8EC3 /* ComicVineSwiftUIAppApp.swift */,
+				73ADE4282825899000ED8EC3 /* Assets.xcassets */,
+				73ADE42A2825899000ED8EC3 /* Preview Content */,
+			);
+			path = ComicVineSwiftUIApp;
+			sourceTree = "<group>";
+		};
+		73ADE42A2825899000ED8EC3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				73ADE42B2825899000ED8EC3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		73ADE43228258A4B00ED8EC3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				73ADE43628258A9400ED8EC3 /* Constants.swift */,
+				73ADE43A28258DF900ED8EC3 /* DefaultModels.swift */,
+				73BCEC362826ED6F003286AC /* GetPlistInformation.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		73ADE43328258A5400ED8EC3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				73ADE43E28258E3C00ED8EC3 /* CharactersViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		73ADE43428258A6000ED8EC3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		73ADE43528258A6D00ED8EC3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				73BCEC3A2828178F003286AC /* CharacterView */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		73BCEC312826E861003286AC /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				73BCEC322826E875003286AC /* NetworkManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		73BCEC342826E99A003286AC /* Properties */ = {
+			isa = PBXGroup;
+			children = (
+				73BCEC352826E9F6003286AC /* Info.plist */,
+				73BCEC3E28282BC1003286AC /* URL.plist */,
+			);
+			path = Properties;
+			sourceTree = "<group>";
+		};
+		73BCEC3A2828178F003286AC /* CharacterView */ = {
+			isa = PBXGroup;
+			children = (
+				73BCEC3B2828179C003286AC /* Model */,
+				73BCEC382828178B003286AC /* CharacterView.swift */,
+			);
+			path = CharacterView;
+			sourceTree = "<group>";
+		};
+		73BCEC3B2828179C003286AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				73BCEC3C282817AB003286AC /* CharacterViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		73ADE4202825898E00ED8EC3 /* ComicVineSwiftUIApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73ADE42F2825899000ED8EC3 /* Build configuration list for PBXNativeTarget "ComicVineSwiftUIApp" */;
+			buildPhases = (
+				73ADE41D2825898E00ED8EC3 /* Sources */,
+				73ADE41E2825898E00ED8EC3 /* Frameworks */,
+				73ADE41F2825898E00ED8EC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ComicVineSwiftUIApp;
+			productName = ComicVineSwiftUIApp;
+			productReference = 73ADE4212825898E00ED8EC3 /* ComicVineSwiftUIApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		73ADE4192825898E00ED8EC3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					73ADE4202825898E00ED8EC3 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 73ADE41C2825898E00ED8EC3 /* Build configuration list for PBXProject "ComicVineSwiftUIApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 73ADE4182825898E00ED8EC3;
+			productRefGroup = 73ADE4222825898E00ED8EC3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				73ADE4202825898E00ED8EC3 /* ComicVineSwiftUIApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		73ADE41F2825898E00ED8EC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73ADE42C2825899000ED8EC3 /* Preview Assets.xcassets in Resources */,
+				73ADE4292825899000ED8EC3 /* Assets.xcassets in Resources */,
+				73BCEC3F28282BC1003286AC /* URL.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		73ADE41D2825898E00ED8EC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73ADE43F28258E3C00ED8EC3 /* CharactersViewModel.swift in Sources */,
+				73BCEC3D282817AB003286AC /* CharacterViewModel.swift in Sources */,
+				73ADE43B28258DF900ED8EC3 /* DefaultModels.swift in Sources */,
+				73BCEC332826E875003286AC /* NetworkManager.swift in Sources */,
+				73BCEC372826ED6F003286AC /* GetPlistInformation.swift in Sources */,
+				73ADE4252825898E00ED8EC3 /* ComicVineSwiftUIAppApp.swift in Sources */,
+				73BCEC392828178B003286AC /* CharacterView.swift in Sources */,
+				73ADE43728258A9400ED8EC3 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		73ADE42D2825899000ED8EC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		73ADE42E2825899000ED8EC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		73ADE4302825899000ED8EC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ComicVineSwiftUIApp/Preview Content\"";
+				DEVELOPMENT_TEAM = QBZSC9M2VQ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ComicVineSwiftUIApp/Properties/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arnau.ComicVineSwiftUIApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		73ADE4312825899000ED8EC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ComicVineSwiftUIApp/Preview Content\"";
+				DEVELOPMENT_TEAM = QBZSC9M2VQ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ComicVineSwiftUIApp/Properties/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arnau.ComicVineSwiftUIApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		73ADE41C2825898E00ED8EC3 /* Build configuration list for PBXProject "ComicVineSwiftUIApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73ADE42D2825899000ED8EC3 /* Debug */,
+				73ADE42E2825899000ED8EC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73ADE42F2825899000ED8EC3 /* Build configuration list for PBXNativeTarget "ComicVineSwiftUIApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73ADE4302825899000ED8EC3 /* Debug */,
+				73ADE4312825899000ED8EC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 73ADE4192825898E00ED8EC3 /* Project object */;
+}
