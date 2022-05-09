@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>getCharacter</key>
+	<string>https://comicvine.gamespot.com/api/character/</string>
+	<key>getCharacters</key>
+	<string>https://comicvine.gamespot.com/api/characters/</string>
+	<key>getApiRest</key>
+	<string>https://comicvine.gamespot.com/api/</string>
+</dict>
+</plist>
