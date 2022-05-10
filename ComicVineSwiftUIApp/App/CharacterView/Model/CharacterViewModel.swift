@@ -11,28 +11,28 @@ import Combine
 class CharacterViewModel: ObservableObject {
     
     let didChange = PassthroughSubject<CharacterViewModel, Never>()
+    let service: Services?
 
-    @Published var characterInformation: CharactersViewModel? {
+    @Published var characterInformation: CharactersModel? {
         didSet {
             didChange.send(self)
         }
     }
     
-    init() {
+    init(service: Services) {
+        self.service = service
         getCharacterInformationAPI()
     }
     
-    var parameters: [String : String] =
-
-    [
-        "format" : "json",
-        "api_key" : comicVineApiKey,
-        "filter": "gender:female,name:Dream Girl"
-    ]
-    
     func getCharacterInformationAPI() {
-        NetworkManager().getAPIInformation(
-            responsesAPI: "getCharacters",
+        let parameters: [String : String] = [
+            "format" : "json",
+            "api_key" : comicVineApiKey,
+            "filter": "gender:female,name:Dream Girl"
+        ]
+        
+        service?.getAPIInformation(
+            responsesAPI: URLEnum.getCharacters,
             parameters: parameters) {
                 self.characterInformation = $0
             }

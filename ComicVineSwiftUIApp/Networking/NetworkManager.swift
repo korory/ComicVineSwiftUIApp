@@ -7,10 +7,18 @@
 
 import Foundation
 
-class NetworkManager {
+protocol Services {
+    func getAPIInformation<T: Decodable>(responsesAPI: URLEnum, parameters: [String : String], completion: @escaping(T) -> ())
+}
+
+protocol DecodeProtocol {
+    func decodeJSON<T: Decodable>(data: Data, completion: @escaping(T) -> ())
+}
+
+class NetworkManager: Services, DecodeProtocol {
     
     //Fix all parameters [String: String] to [String: Any]
-   public func getAPIInformation(responsesAPI: String, parameters: [String : String], completion: @escaping(CharactersViewModel) -> ()) {
+   public func getAPIInformation<T: Decodable>(responsesAPI: URLEnum, parameters: [String : String], completion: @escaping(T) -> ()) {
         
        var components = URLComponents(url: getURLInPlist(name: responsesAPI), resolvingAgainstBaseURL: true)
         
@@ -28,19 +36,23 @@ class NetworkManager {
             }
             
             if informationResponse.statusCode == 200  {
-                
-                do {
-                    let charactersInformation = try JSONDecoder().decode(CharactersViewModel.self, from: informationData)
-                    DispatchQueue.main.async {
-                        //Devolver ese objeto en el completion
-                        completion(charactersInformation)
-                    }
-                    
-                } catch let error {
-                    print("Ha ocurrido un error: \(error.localizedDescription)")
+                self.decodeJSON(data: informationData) {
+                    completion($0)
                 }
             }
             
         }.resume()
+    }
+    
+    func decodeJSON<T: Decodable>(data: Data, completion: @escaping(T) -> ()) {
+        do {
+            let informationData = try JSONDecoder().decode(T.self, from: data)
+            DispatchQueue.main.async {
+                completion(informationData)
+            }
+            
+        } catch let error {
+            print("Ha ocurrido un error: \(error.localizedDescription)")
+        }
     }
 }

@@ -8,12 +8,13 @@
 import Foundation
 
 // MARK: - CharactersViewModel
-struct CharactersViewModel: Codable {
+public struct CharactersModel: Codable {
     var error: String?
     var limit, offset, numberOfPageResults, numberOfTotalResults: Int?
     var statusCode: Int?
     var results: [Result]?
     var version: String?
+    //Algo de INT para el tests?
 }
 
 // MARK: - Result
