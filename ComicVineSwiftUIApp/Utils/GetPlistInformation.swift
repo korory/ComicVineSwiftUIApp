@@ -7,7 +7,7 @@
 
 import Foundation
 
-public func getURLInPlist(name: String) -> URL{
+public func getURLInPlist(name: URLEnum) -> URL{
     
     if let infoPlistPath = Bundle.main.url(forResource: "URL", withExtension: "plist") {
         
@@ -15,7 +15,7 @@ public func getURLInPlist(name: String) -> URL{
             let infoPlistData = try Data(contentsOf: infoPlistPath)
             
             if let dict = try PropertyListSerialization.propertyList(from: infoPlistData, options: [], format: nil) as? [String: Any] {
-                if let index = dict.index(forKey: name) {
+                if let index = dict.index(forKey: name.getURL()) {
                     guard let url = URL(string: dict[index].value as! String) else { return URL(fileURLWithPath: "") }
                     return url
                 }

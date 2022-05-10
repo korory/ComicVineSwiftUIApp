@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		738435C2282ACE03003FFD59 /* ComicVineSwiftUIAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738435C1282ACE03003FFD59 /* ComicVineSwiftUIAppTests.swift */; };
+		738435CC282AE31E003FFD59 /* URLEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738435CB282AE31E003FFD59 /* URLEnum.swift */; };
+		738435D3282AF784003FFD59 /* characters.json in Resources */ = {isa = PBXBuildFile; fileRef = 738435D2282AF784003FFD59 /* characters.json */; };
+		738435D4282AF89F003FFD59 /* characters.json in Resources */ = {isa = PBXBuildFile; fileRef = 738435D2282AF784003FFD59 /* characters.json */; };
 		73ADE4252825898E00ED8EC3 /* ComicVineSwiftUIAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73ADE4242825898E00ED8EC3 /* ComicVineSwiftUIAppApp.swift */; };
 		73ADE4292825899000ED8EC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73ADE4282825899000ED8EC3 /* Assets.xcassets */; };
 		73ADE42C2825899000ED8EC3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73ADE42B2825899000ED8EC3 /* Preview Assets.xcassets */; };
 		73ADE43728258A9400ED8EC3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73ADE43628258A9400ED8EC3 /* Constants.swift */; };
 		73ADE43B28258DF900ED8EC3 /* DefaultModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73ADE43A28258DF900ED8EC3 /* DefaultModels.swift */; };
-		73ADE43F28258E3C00ED8EC3 /* CharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73ADE43E28258E3C00ED8EC3 /* CharactersViewModel.swift */; };
+		73ADE43F28258E3C00ED8EC3 /* CharactersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73ADE43E28258E3C00ED8EC3 /* CharactersModel.swift */; };
 		73BCEC332826E875003286AC /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BCEC322826E875003286AC /* NetworkManager.swift */; };
 		73BCEC372826ED6F003286AC /* GetPlistInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BCEC362826ED6F003286AC /* GetPlistInformation.swift */; };
 		73BCEC392828178B003286AC /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BCEC382828178B003286AC /* CharacterView.swift */; };
@@ -20,14 +24,28 @@
 		73BCEC3F28282BC1003286AC /* URL.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73BCEC3E28282BC1003286AC /* URL.plist */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		738435C3282ACE03003FFD59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73ADE4192825898E00ED8EC3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73ADE4202825898E00ED8EC3;
+			remoteInfo = ComicVineSwiftUIApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		738435BF282ACE03003FFD59 /* ComicVineSwiftUIAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComicVineSwiftUIAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		738435C1282ACE03003FFD59 /* ComicVineSwiftUIAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicVineSwiftUIAppTests.swift; sourceTree = "<group>"; };
+		738435CB282AE31E003FFD59 /* URLEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEnum.swift; sourceTree = "<group>"; };
+		738435D2282AF784003FFD59 /* characters.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = characters.json; sourceTree = "<group>"; };
 		73ADE4212825898E00ED8EC3 /* ComicVineSwiftUIApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComicVineSwiftUIApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73ADE4242825898E00ED8EC3 /* ComicVineSwiftUIAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicVineSwiftUIAppApp.swift; sourceTree = "<group>"; };
 		73ADE4282825899000ED8EC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73ADE42B2825899000ED8EC3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		73ADE43628258A9400ED8EC3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		73ADE43A28258DF900ED8EC3 /* DefaultModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultModels.swift; sourceTree = "<group>"; };
-		73ADE43E28258E3C00ED8EC3 /* CharactersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewModel.swift; sourceTree = "<group>"; };
+		73ADE43E28258E3C00ED8EC3 /* CharactersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersModel.swift; sourceTree = "<group>"; };
 		73BCEC322826E875003286AC /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		73BCEC352826E9F6003286AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73BCEC362826ED6F003286AC /* GetPlistInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPlistInformation.swift; sourceTree = "<group>"; };
@@ -37,6 +55,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		738435BC282ACE03003FFD59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		73ADE41E2825898E00ED8EC3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -47,10 +72,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		738435C0282ACE03003FFD59 /* ComicVineSwiftUIAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				738435C1282ACE03003FFD59 /* ComicVineSwiftUIAppTests.swift */,
+				738435D2282AF784003FFD59 /* characters.json */,
+			);
+			path = ComicVineSwiftUIAppTests;
+			sourceTree = "<group>";
+		};
 		73ADE4182825898E00ED8EC3 = {
 			isa = PBXGroup;
 			children = (
 				73ADE4232825898E00ED8EC3 /* ComicVineSwiftUIApp */,
+				738435C0282ACE03003FFD59 /* ComicVineSwiftUIAppTests */,
 				73ADE4222825898E00ED8EC3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				73ADE4212825898E00ED8EC3 /* ComicVineSwiftUIApp.app */,
+				738435BF282ACE03003FFD59 /* ComicVineSwiftUIAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,6 +129,7 @@
 				73ADE43628258A9400ED8EC3 /* Constants.swift */,
 				73ADE43A28258DF900ED8EC3 /* DefaultModels.swift */,
 				73BCEC362826ED6F003286AC /* GetPlistInformation.swift */,
+				738435CB282AE31E003FFD59 /* URLEnum.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -100,7 +137,7 @@
 		73ADE43328258A5400ED8EC3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				73ADE43E28258E3C00ED8EC3 /* CharactersViewModel.swift */,
+				73ADE43E28258E3C00ED8EC3 /* CharactersModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -157,6 +194,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		738435BE282ACE03003FFD59 /* ComicVineSwiftUIAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 738435C7282ACE03003FFD59 /* Build configuration list for PBXNativeTarget "ComicVineSwiftUIAppTests" */;
+			buildPhases = (
+				738435BB282ACE03003FFD59 /* Sources */,
+				738435BC282ACE03003FFD59 /* Frameworks */,
+				738435BD282ACE03003FFD59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				738435C4282ACE03003FFD59 /* PBXTargetDependency */,
+			);
+			name = ComicVineSwiftUIAppTests;
+			productName = ComicVineSwiftUIAppTests;
+			productReference = 738435BF282ACE03003FFD59 /* ComicVineSwiftUIAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		73ADE4202825898E00ED8EC3 /* ComicVineSwiftUIApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 73ADE42F2825899000ED8EC3 /* Build configuration list for PBXNativeTarget "ComicVineSwiftUIApp" */;
@@ -184,6 +239,10 @@
 				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
+					738435BE282ACE03003FFD59 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 73ADE4202825898E00ED8EC3;
+					};
 					73ADE4202825898E00ED8EC3 = {
 						CreatedOnToolsVersion = 13.3.1;
 					};
@@ -203,11 +262,20 @@
 			projectRoot = "";
 			targets = (
 				73ADE4202825898E00ED8EC3 /* ComicVineSwiftUIApp */,
+				738435BE282ACE03003FFD59 /* ComicVineSwiftUIAppTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		738435BD282ACE03003FFD59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				738435D3282AF784003FFD59 /* characters.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		73ADE41F2825898E00ED8EC3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -215,20 +283,30 @@
 				73ADE42C2825899000ED8EC3 /* Preview Assets.xcassets in Resources */,
 				73ADE4292825899000ED8EC3 /* Assets.xcassets in Resources */,
 				73BCEC3F28282BC1003286AC /* URL.plist in Resources */,
+				738435D4282AF89F003FFD59 /* characters.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		738435BB282ACE03003FFD59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				738435C2282ACE03003FFD59 /* ComicVineSwiftUIAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		73ADE41D2825898E00ED8EC3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73ADE43F28258E3C00ED8EC3 /* CharactersViewModel.swift in Sources */,
+				73ADE43F28258E3C00ED8EC3 /* CharactersModel.swift in Sources */,
 				73BCEC3D282817AB003286AC /* CharacterViewModel.swift in Sources */,
 				73ADE43B28258DF900ED8EC3 /* DefaultModels.swift in Sources */,
 				73BCEC332826E875003286AC /* NetworkManager.swift in Sources */,
+				738435CC282AE31E003FFD59 /* URLEnum.swift in Sources */,
 				73BCEC372826ED6F003286AC /* GetPlistInformation.swift in Sources */,
 				73ADE4252825898E00ED8EC3 /* ComicVineSwiftUIAppApp.swift in Sources */,
 				73BCEC392828178B003286AC /* CharacterView.swift in Sources */,
@@ -238,7 +316,51 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		738435C4282ACE03003FFD59 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 73ADE4202825898E00ED8EC3 /* ComicVineSwiftUIApp */;
+			targetProxy = 738435C3282ACE03003FFD59 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		738435C5282ACE03003FFD59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QBZSC9M2VQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arnau.ComicVineSwiftUIAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ComicVineSwiftUIApp.app/ComicVineSwiftUIApp";
+			};
+			name = Debug;
+		};
+		738435C6282ACE03003FFD59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QBZSC9M2VQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arnau.ComicVineSwiftUIAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ComicVineSwiftUIApp.app/ComicVineSwiftUIApp";
+			};
+			name = Release;
+		};
 		73ADE42D2825899000ED8EC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -416,6 +538,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		738435C7282ACE03003FFD59 /* Build configuration list for PBXNativeTarget "ComicVineSwiftUIAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				738435C5282ACE03003FFD59 /* Debug */,
+				738435C6282ACE03003FFD59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		73ADE41C2825898E00ED8EC3 /* Build configuration list for PBXProject "ComicVineSwiftUIApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

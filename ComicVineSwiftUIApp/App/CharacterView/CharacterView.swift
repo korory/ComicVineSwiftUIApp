@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CharacterView: View {
     
-    @ObservedObject var model = CharacterViewModel()
+    @ObservedObject var model = CharacterViewModel(service: NetworkManager())
     
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
